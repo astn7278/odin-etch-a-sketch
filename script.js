@@ -7,6 +7,7 @@ for (let i = 0; i < 16 * 16; i++) {
 }
 //create number of cells in grid
 
+
 const cells = document.querySelectorAll('.cells')
 
 cells.forEach((cell) => {
@@ -16,3 +17,10 @@ cells.forEach((cell) => {
 })
 //change color of cell on hover 
 
+
+const btn = document.querySelector('button')
+
+btn.addEventListener('click', function newGrid () {
+    newGridSize = prompt("Enter New Grid Size", "16");
+
+})
