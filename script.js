@@ -7,12 +7,13 @@ for (let i = 0; i < gridSize * gridSize; i++) {
     gridContainer.appendChild(grid);
 }
 
-//change color of cell on hover 
+//change color of cell on hover
+const randomColor =  Math.floor(Math.random()*16777215).toString(16);
 const colorCells = function colorCells() {
 const cells = document.querySelectorAll('.grid')
 cells.forEach((cell) => {
     cell.addEventListener('mouseover', function (e) {
-        e.target.style.background = '#4d99e3';
+        e.target.style.background = '#' + randomColor;
     })
 })
 }
