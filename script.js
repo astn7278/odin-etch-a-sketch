@@ -12,7 +12,7 @@ const colorCells = function colorCells() {
 const cells = document.querySelectorAll('.grid')
 cells.forEach((cell) => {
     cell.addEventListener('mouseover', function (e) {
-        e.target.style.background = 'lightblue';
+        e.target.style.background = '#4d99e3';
     })
 })
 }
